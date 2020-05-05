@@ -33,10 +33,10 @@ public class Person {
     }
     public String getFullName(){
         if (firstName.isEmpty() && lastName.isEmpty()){
-            return "";
+            return ""; // is it possible to use null ?
         }if (lastName.isEmpty()){
             return firstName;
-        }else{ firstName.isEmpty();
+        }else{ firstName.isEmpty(); // why couldn't we use only return lastName?
             return lastName;
         }
     }
